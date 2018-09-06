@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
+		<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 		<meta name="description" content="">
@@ -23,16 +24,16 @@
 								<div class="container">
 												<div class="row">
 																<div class="col-12">
-																		<header id="header" class="d-flex align-items-center justify-content-between navbar-fixed-top">
+																		<header id="header" class="d-flex align-items-center justify-content-between">
 																						<div id="logo"><img id="header-img" width="60" height="60" src="https://www.shareicon.net/data/256x256/2015/12/17/688952_circle_512x512.png" alt="logo"></div>
-																						<div id="nav-bar">
-																										<ul style="list-style: none;" id="nav" class="text-uppercase d-flex">
-																											<li><a class="nav-link" href="#">Features</a></li>
-																											<li><a class="nav-link" href="#">Blog</a></li>
-																											<li><a class="nav-link" href="#">Sign in</a></li>
-																											<li><a class="nav-link" href="#">Try free</a></li>
+																						<nav id="nav-bar" class="">
+																										<ul style="list-style: none;" id="nav" class="text-uppercase">
+																											<li><a class="nav-link" href="#contact">Try free</a></li>
+																											<li><a class="nav-link" href="#quality">Sign in</a></li>
+																											<li><a class="nav-link" href="#quality">Blog</a></li>
+																											<li><a class="nav-link" href="#video-slide">Features</a></li>
 																										</ul>
-																						</div>									
+																						</nav>									
 																		</header>
 															</div>
 											</div>
@@ -53,15 +54,15 @@
 				<section id="video-slide">
 					<div class="container">
 						   <div class="row">
-						   	   <div class="col-6">
+						   	   <div class="col-12 col-md-6">
 						   	   	<h2>Home-Made</h2>
 						   	   	<p id="video-slide-paragraph">
 						   	   		All the items are grown in ecologically safe conditions and are totally organic. We take them right from best Ukrainian farmers to provide our clients with healthy food grown with love and being homemade.
 						   	   	</p>
 						   	   	<div id="" class="text-uppercase know-more-btn">More details</div>
 						   	   </div>
-						   	   <div class="col-6">
-						   	   	   <iframe width="560" height="315" src="https://www.youtube.com/embed/03vWwqYPf60" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+						   	   <div class="col-12 col-md-6">
+						   	   	   <iframe id="video"  src="https://www.youtube.com/embed/03vWwqYPf60" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 						   	   </div>
 						   	   <div id="tomato"></div>
 						   </div>
@@ -70,8 +71,8 @@
 				<section id="quality">
 					<div class="container">
 						   <div class="row">
-						   	<div class="col-6"></div>
-						   	<div class="col-6">
+						   	<div class="col-0 col-sm-6"></div>
+						   	<div class="col-12 col-sm-6">
 						   		<div class="">
 										   		<h2>Quality</h2>
 										   		<p>The products which are offered to clients always pass thorogh quality-control test. Every item is certified and proves to be purely narutal.</p>
@@ -88,8 +89,8 @@
 								<div class="text-center">
 									<h2 id="contact-title">Want to be informed?</h2>
 									<form action="https://www.freecodecamp.com/email-submit" id="form">
-										<input id="email" type="email" placeholder="Enter your email" required>
-										<button id="submit" class="know-more-btn">Subscribe</button>
+										<input name="email" id="email" type="email" placeholder="Enter your email" required>
+										<input id="submit" type="submit" value="Subscribe"  class="know-more-btn"></input>
 									</form>
 								</div>
 							</div>
