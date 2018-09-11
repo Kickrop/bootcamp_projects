@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title></title>
+</head>
+<body>
+	<div class="main">
+	<h1 id="title">Fill in the form below</h1>
+	<p id="description">We are trying to understand what people know about tech</p>
+	<form id="survey-form">
+		<div class="label">
+			<label id="name-label" for="name">*Name</label>
+		</div>
+		<input id="name" class="input" type="text" name="name" placeholder="Enter your name" required>
+		
+		<div class="label">
+			<label id="email-label" for="email">*Email</label>
+		</div>
+		<input id="email" class="input" type="email" name="email" placeholder="example@googlex.com" required>
+		
+		<div class="label">
+			<label id="number-label" for="age">*Age</label>
+		</div>
+		<input id="number" class="input" type="number" min="1" max="125" name="Age" placeholder="Enter your age" required><br>
+  
+  <div class="label">	<label id="" for="drop">What do you think about Elon Musk?</label></div>
+  <select id="dropdown" class="input" name="drop">
+  	<option disabled value>Select an option</option>
+  	<option value="text1">He is a great guy!</option>
+  		<option value="text1">Extraordinary entrepreneur and engineer</option>
+  		<option value="text2">He is shady</option>
+  		<option value="text3">I do not know anything about him</option>
+
+  </select>
+  <div class="label">
+		  <label for="userRatings">Do you trust Elon Musk?</label>
+		</div>
+  <ul style="list-style: none;">
+  	<li class="radio"><label for=""><input name="radio-buttons" value="1" type="radio" class="userRatings">Shut up and take my money!</label></li>
+  	<li class="radio"><label for=""><input name="radio-buttons" value="2" type="radio" class="userRatings">I do trust him</label></li>
+  	<li class="radio"><label for=""><input name="radio-buttons" value="3" type="radio" class="userRatings">No way in hell</label></li>
+  	<li class="radio"><label for=""><input name="radio-buttons" value="4" type="radio" class="userRatings">I did not thought about it</label></li>
+  </ul>
+  
+	 <div class="label">
+		  <label for="prefer">Would you consider yourself as someone who likes tech? (you may choose many answers)</label>
+		</div>
+	<ul style="list-style: none;">
+		<li class="checkbox"><label><input name="prefer" value="1" type="checkbox">I watch tech related videos</label></li>
+		<li class="checkbox"><label><input name="prefer" value="2" type="checkbox">I read abot tech</label></li>
+		<li class="checkbox"><label><input name="prefer" value="3" type="checkbox">I like to buy newest tech</label></li>
+		<li class="checkbox"><label><input name="prefer" value="4" type="checkbox">I am working in tech related field</label></li>
+		<li class="checkbox"><label><input name="prefer" value="5" type="checkbox">I do not like tech</label></li>
+	</ul>
+
+	<div class="label">
+  <label for="textarea">If you want to let us know about something</label>
+ </div>
+  <textarea name="comments" id="comments" class="input"></textarea><br>
+
+  <button id="submit">Submit results</button>
+	</form>
+	</div>
+</body>
+</html>
